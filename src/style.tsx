@@ -4,6 +4,8 @@ import { colors } from './styles';
 const AppWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  max-width: 100vw;
   min-height: 100vh;
   text-align: center;
   header {
@@ -17,9 +19,26 @@ const AppWrapper = styled.div`
   }
   section {
     flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: ${`
+      'area area'
+      'radar pie'
+    `};
+    grid-gap: 20px;
+    padding: 10px 10px 40px;
+    .area {
+      grid-area: area;
+    }
+    .radar {
+      grid-area: radar;
+    }
+    .graph {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 `;
 

@@ -1,9 +1,4 @@
-export interface IData {
-  date: string;
-  incomes: number;
-  expenses: number;
-}
-export const data: IData[] = [
+export const areaChartData = [
   { date: '01', incomes: 0, expenses: 2860 },
   { date: '02', incomes: 0, expenses: 0 },
   { date: '03', incomes: 3220, expenses: 930 },
@@ -34,4 +29,12 @@ export const data: IData[] = [
   { date: '28', incomes: 0, expenses: 1010 },
   { date: '29', incomes: 0, expenses: 680 },
   { date: '30', incomes: 0, expenses: 0 },
+];
+
+export const radarChartData = [
+  { param: 'Сражение', p1: 5.24, p2: 4.08 },
+  { param: 'Добыча золота', p1: 5.22, p2: 6.48 },
+  { param: 'Поддержка', p1: 4.34, p2: 6.44 },
+  { param: 'Осада', p1: 5.36, p2: 4.23 },
+  { param: 'Гибкость', p1: 8.73, p2: 4.82 },
 ];

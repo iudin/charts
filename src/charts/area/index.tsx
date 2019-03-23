@@ -9,16 +9,16 @@ import {
   TooltipProps,
 } from 'recharts';
 
-import { colors } from '../styles';
-import { data, IData } from '../data';
+import { colors } from '../../styles';
+import { areaChartData } from '../../data';
 
-import ChartTooltip from './style';
+import ChartTooltip from '../style';
 
-const Chart = () => (
+const AreaGraph = () => (
   <AreaChart
     width={960}
     height={400}
-    data={data}
+    data={areaChartData}
     margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
   >
     <defs>
@@ -77,4 +77,4 @@ const CustomTooltip = ({ active, payload, label }: TooltipProps) => {
   return null;
 };
 
-export default Chart;
+export default AreaGraph;
