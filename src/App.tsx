@@ -5,6 +5,7 @@ import AppWrapper from './style';
 
 import AreaGraph from './charts/area';
 import RadarGraph from './charts/radar';
+import PieGraph from './charts/pie';
 
 class App extends Component {
   render() {
@@ -25,6 +26,12 @@ class App extends Component {
               онлайн-игре
             </h2>
             <RadarGraph />
+          </div>
+          <div className="graph pie">
+            <h2>
+              Структура расходов по категориям за тот же месяц того же года
+            </h2>
+            <PieGraph />
           </div>
         </section>
       </AppWrapper>

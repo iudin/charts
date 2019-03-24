@@ -38,3 +38,14 @@ export const radarChartData = [
   { param: 'Осада', p1: 5.36, p2: 4.23 },
   { param: 'Гибкость', p1: 8.73, p2: 4.82 },
 ];
+
+export const pieChartData = [
+  { category: 'Одежда', value: 5400 },
+  { category: 'Еда', value: 17030 },
+  { category: 'Хозтовары', value: 1560 },
+  { category: 'Авто', value: 3000 },
+  { category: 'Платежи', value: 12360 },
+  { category: 'Развлечения', value: 1220 },
+  { category: 'Подарки', value: 9300 },
+  { category: 'Другие расходы', value: 2100 },
+];
