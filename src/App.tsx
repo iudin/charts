@@ -6,6 +6,7 @@ import AppWrapper from './style';
 import AreaGraph from './charts/area';
 import RadarGraph from './charts/radar';
 import PieGraph from './charts/pie';
+import RadialBarGraph from './charts/radial-bar';
 
 class App extends Component {
   render() {
@@ -32,6 +33,12 @@ class App extends Component {
               Структура расходов по категориям за тот же месяц того же года
             </h2>
             <PieGraph />
+          </div>
+          <div className="graph radial">
+            <h2>
+              Мои кольца активности на Apple Watch, если бы они у меня были
+            </h2>
+            <RadialBarGraph />
           </div>
         </section>
       </AppWrapper>

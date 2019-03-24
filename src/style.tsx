@@ -24,6 +24,7 @@ const AppWrapper = styled.div`
     grid-template-areas: ${`
       'area area'
       'radar pie'
+      'radial radial'
     `};
     grid-gap: 20px;
     padding: 10px 10px 40px;
@@ -32,6 +33,12 @@ const AppWrapper = styled.div`
     }
     .radar {
       grid-area: radar;
+    }
+    .pie {
+      grid-area: pie;
+    }
+    .radial {
+      grid-area: radial;
     }
     .graph {
       display: flex;

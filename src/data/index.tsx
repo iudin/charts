@@ -49,3 +49,11 @@ export const pieChartData = [
   { category: 'Подарки', value: 9300 },
   { category: 'Другие расходы', value: 2100 },
 ];
+
+export const radialBarChartData = [
+  { name: 'Подвижность', value: 32, fill: '#83a6ed' },
+  { name: 'Упражнения', value: 14, fill: '#8dd1e1' },
+  { name: 'Разминка', value: 21, fill: '#82ca9d' },
+  { name: 'Прокрастинация', value: 9, fill: '#a4de6c' },
+  { name: 'Программирование', value: 30, fill: '#ffc658' },
+];
